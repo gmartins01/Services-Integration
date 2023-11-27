@@ -82,16 +82,14 @@ Daemon-type application, which runs in the background and is started every 5 min
 Daemon-type application, which runs in the background and is started every 5 mins (configurable). The application will select up to 100 entities from the pg-rel database for which it is necessary to update or obtain GPS coordinates. As with TP1, the coordinates can be obtained using Nominatim's Search API, with the already existing HTTP Requests module in Python.
 
 ##### *api-entities* #####
-Web REST API in Django that allows performing CRUD of all entities. 
+Web REST API in Flask that allows performing CRUD of all entities. 
 
 ##### *api-gis* #####
-Web REST API in Django that allows obtaining geographical data by region.
+Web REST API in Flask that allows obtaining geographical data by region.
 
 ##### *api-proc* #####
-Web REST API in Django that allows for reporting. Obtains the data from the RPC Server. 
+Web REST API in Flask that allows for reporting. Obtains the data from the RPC Server. 
 
-##### *api-graphql* #####
-Web GraphQL API that allows for reporting. Obtains the data from the Entities API.
 
 ##### *frontend-ent* #####
 Web frontend application that allows consulting the entities' data.
